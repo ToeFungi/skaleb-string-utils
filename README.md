@@ -42,27 +42,41 @@ return camelCase('This is now camel case')
 ```
 
 `toBinary(string, ?deliminate)` converts the given string or sentence into binary code. This by default is returned as 
-a single string however the response can be set to be deliminated. This delimination is spaces.
+a single string however the response can be set to be deliminated.
 ```typescript
 import { toBinary } from './index'
+import { Delimination } from './enums/Delimination'
 
+// No delimination
 // 1110011110111111011011100101100000110001011010011101110110000111100101111001
 return toBinary('some binary')
 
+// Space deliminated
 // 1110011 1101111 1101101 1100101 100000 1100010 1101001 1101110 1100001 1110010 1111001
-return toBinary('some binary', true)
+return toBinary('some binary', Delimination.SPACES)
+
+// Retain original delimination
+// 1110011110111111011011100101 110001011010011101110110000111100101111001
+return toBinary('some binary', Delimination.ORIGINAL)
 ```
 
 `toHexadecimal(string, ?deliminate)` converts the given string or sentence into hexadecimal. This be default is returned
-as a single string however the response can be set to be deliminated. This delimination is spaces.
+as a single string however the response can be set to be deliminated.
 ```typescript
 import { toHexadecimal } from './index'
+import { Delimination } from './enums/Delimination'
 
+// No delimination
 // 68657861646563696d616c
 return toHexadecimal('hexadecimal')
 
+// Space deliminated
 // 73 6f 6d 65 20 68 65 78 61 64 65 63 69 6d 61 6c
-return toHexadecimal('some hexadecimal', true)
+return toHexadecimal('some hexadecimal', Delimination.SPACES)
+
+// Retain original delimination
+// 736f6d65 68657861646563696d616c
+return toHexadecimal('some hexadecimal', Delimination.ORIGINAL)
 ```
 
 ## Tests

@@ -1,8 +1,10 @@
-import { camelCase } from '../../src/CamelCase'
+import { camelCase } from '../../src'
 
 describe('CamelCase', () => {
-  it('returns a case in camelCase format', () => {
-    return camelCase('some string to camel case')
-      .should.deep.equal('someStringToCamelCase')
+  describe('#camelCase', () => {
+    it('returns a case in camelCase format', () => {
+      return camelCase('some string to camel case')
+        .should.deep.equal('someStringToCamelCase')
+    })
   })
 })
