@@ -1,5 +1,6 @@
 /**
  * Convert a string to camelCaseFormat where each word is joined together and the start of each word bar the initial word is capitalized
+ * @param {string} str The string/sentence to be converted to camelCaseFormat
  */
 export function camelCase(str: string): string {
   /**

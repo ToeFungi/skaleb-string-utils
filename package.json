@@ -1,6 +1,6 @@
 {
   "name": "skaleb-string-utils",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Simple string utilities provided in an easy to consume interface",
   "main": "index.ts",
   "scripts": {
