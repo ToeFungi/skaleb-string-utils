@@ -33,6 +33,14 @@ import { capitalCase } from './index'
 return capitalCase('some or other string')
 ```
 
+`camelCase(string)` converts the given string to camelCaseFormat and returns it
+```typescript
+import { camelCase } from './index'
+
+// thisIsNowCamelCase
+return camelCase('This is now camel case')
+```
+
 ## Tests
 This project is completely covered by unit tests. Various cases have been accounted for both in the codebase and in the 
 tests covering it. If a bug is picked up regarding the test suite or code, feel free to make a contribution to help 

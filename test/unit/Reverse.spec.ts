@@ -6,7 +6,7 @@ describe('Reverse', () => {
       .should.deep.equal('drow')
   })
 
-  it('returns a reversed string', () => {
+  it('returns a reversed string when multiple words are given', () => {
     return reverse('multiple words in a string')
       .should.deep.equal('gnirts a ni sdrow elpitlum')
   })
