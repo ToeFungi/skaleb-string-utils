@@ -41,6 +41,18 @@ import { camelCase } from './index'
 return camelCase('This is now camel case')
 ```
 
+`toBinary(string, ?deliminated)` converts the given string or sentence into binary code. This by default is returned as 
+a single string however the response can be set to be deliminated. This delimination is spaces
+```typescript
+import { toBinary } from './index'
+
+// 1110011110111111011011100101100000110001011010011101110110000111100101111001
+return toBinary('some binary')
+
+// 1110011 1101111 1101101 1100101 100000 1100010 1101001 1101110 1100001 1110010 1111001
+return toBinary('some binary', true)
+```
+
 ## Tests
 This project is completely covered by unit tests. Various cases have been accounted for both in the codebase and in the 
 tests covering it. If a bug is picked up regarding the test suite or code, feel free to make a contribution to help 
