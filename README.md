@@ -17,7 +17,7 @@ $ npm i --save skaleb-string-utils
 ```
 
 ## Usage
-`reverse(string)` reverses and returns the given string
+`reverse(string)` reverses and returns the given string.
 ```typescript
 import { reverse } from './index'
 
@@ -25,7 +25,7 @@ import { reverse } from './index'
 return reverse('some string')
 ```
 
-`capitalCase(string)` capitalizes each individual word in a given string and returns the new string
+`capitalCase(string)` capitalizes each individual word in a given string and returns the new string.
 ```typescript
 import { capitalCase } from './index'
 
@@ -33,7 +33,7 @@ import { capitalCase } from './index'
 return capitalCase('some or other string')
 ```
 
-`camelCase(string)` converts the given string to camelCaseFormat and returns it
+`camelCase(string)` converts the given string to camelCaseFormat and returns it.
 ```typescript
 import { camelCase } from './index'
 
@@ -41,8 +41,8 @@ import { camelCase } from './index'
 return camelCase('This is now camel case')
 ```
 
-`toBinary(string, ?deliminated)` converts the given string or sentence into binary code. This by default is returned as 
-a single string however the response can be set to be deliminated. This delimination is spaces
+`toBinary(string, ?deliminate)` converts the given string or sentence into binary code. This by default is returned as 
+a single string however the response can be set to be deliminated. This delimination is spaces.
 ```typescript
 import { toBinary } from './index'
 
@@ -51,6 +51,18 @@ return toBinary('some binary')
 
 // 1110011 1101111 1101101 1100101 100000 1100010 1101001 1101110 1100001 1110010 1111001
 return toBinary('some binary', true)
+```
+
+`toHexadecimal(string, ?deliminate)` converts the given string or sentence into hexadecimal. This be default is returned
+as a single string however the response can be set to be deliminated. This delimination is spaces.
+```typescript
+import { toHexadecimal } from './index'
+
+// 68657861646563696d616c
+return toHexadecimal('hexadecimal')
+
+// 73 6f 6d 65 20 68 65 78 61 64 65 63 69 6d 61 6c
+return toHexadecimal('some hexadecimal', true)
 ```
 
 ## Tests
