@@ -27,6 +27,9 @@ interface String {
    */
   reverse(): string
 
+  /**
+   * Reverses the given string or sentence while retaining the position of the words and returns it
+   */
   reverseWords(): string
 
   /**
@@ -39,8 +42,16 @@ interface String {
    */
   toCamelCase(): string
 
+  /**
+   * Convert a string to snake_case_format where each word is joined together by underscores
+   * @param {boolean} capitalize Whether or not to return a capitalized response
+   */
   toSnakeCase(capitalize?: boolean): string
 
+  /**
+   * Convert a string to kebab-case-format where each word is joined together by dashes
+   * @param {boolean} capitalize Whether or not to return a capitalized response
+   */
   toKebabCase(capitalize?: boolean): string
 
   /**
