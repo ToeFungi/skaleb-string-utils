@@ -70,4 +70,9 @@ interface String {
    * Determines whether or not the string is a palindrome
    */
   isPalindromic(): boolean
+
+  /**
+   * Returns the number of words contained in a given sentence
+   */
+  wordCount(): number
 }

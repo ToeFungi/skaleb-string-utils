@@ -4,6 +4,7 @@ import './types/Extension'
 // Prototype extensions
 import './Reverse'
 import './ToBinary'
+import './WordCount'
 import './ToCamelCase'
 import './ToSnakeCase'
 import './ToKebabCase'
