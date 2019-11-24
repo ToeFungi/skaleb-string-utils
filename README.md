@@ -6,8 +6,9 @@
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=skaleb-string-utils&metric=code_smells)](https://sonarcloud.io/dashboard?id=skaleb-string-utils)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=skaleb-string-utils&metric=coverage)](https://sonarcloud.io/dashboard?id=skaleb-string-utils)
 
-This package provides easy to use string utility functions that provide more functionality above and beyond normal 
-string functions. These functions can be imported individually, without instantiation.
+This package provides new String functionality that is provided by modifying the existing String prototype. It provides
+various utility functions that may come in handy from time to time for various edge cases. There is no instantiation
+required to use this package, merely importing the file at your projects entry.
 
 ## Installation
 To install this package you can simply use the install command below.
