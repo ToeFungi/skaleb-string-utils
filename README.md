@@ -34,6 +34,15 @@ return word.reverse()
 return sentence.reverse()
 ```
 
+`.reverseWords()` reverses the words in a sentence while retaining the position of the words in that sentence.
+```typescript
+// drow
+return word.reverse()
+
+// emos ecnetnes
+return sentence.reverse()
+```
+
 `.toCapitalCase()` capitalizes each individual word in a given string and returns the new string.
 ```typescript
 // Some Sentence
@@ -44,6 +53,24 @@ return sentence.toCapitalCase()
 ```typescript
 // someSentence
 return sentence.toCamelCase()
+```
+
+`.toKebabCase()` converts the given string to kebab-case-format and returns it.
+```typescript
+// some-sentence
+return sentence.toKebabCase()
+
+// SOME-SENTENCE
+return sentence.toKebabCase(true)
+```
+
+`.toSnakeCase()` converts the given string to snake_case_format and returns it.
+```typescript
+// some_sentence
+return sentence.toSnakeCase()
+
+// SOME_SENTENCE
+return sentence.toSnakeCase(true)
 ```
 
 `.toBinary(?deliminate)` converts the given string or sentence into binary code. This by default is returned as 

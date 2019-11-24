@@ -27,6 +27,8 @@ interface String {
    */
   reverse(): string
 
+  reverseWords(): string
+
   /**
    * Converts the given sentence or string to Capital Case Format
    */
@@ -36,6 +38,10 @@ interface String {
    * Convert a string to camelCaseFormat where each word is joined together and the start of each word bar the initial word is capitalized
    */
   toCamelCase(): string
+
+  toSnakeCase(capitalize?: boolean): string
+
+  toKebabCase(capitalize?: boolean): string
 
   /**
    * Converts the string into binary code. By default the response is concatenated together but can be set to be space deliminated
