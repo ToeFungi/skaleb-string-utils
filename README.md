@@ -50,10 +50,16 @@ return sentence.reverse()
 `.reverseWords()` reverses the words in a sentence while retaining the position of the words in that sentence.
 ```typescript
 // drow
-return word.reverse()
+return word.reverseWords()
 
 // emos ecnetnes
-return sentence.reverse()
+return sentence.reverseWords()
+```
+
+`.wordCount()` returns the number of words in the given sentence.
+```typescript
+// 2
+return sentence.wordCount()
 ```
 
 `.toCapitalCase()` capitalizes each individual word in a given string and returns the new string.
