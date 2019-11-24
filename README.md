@@ -17,66 +17,73 @@ $ npm i --save skaleb-string-utils
 ```
 
 ## Usage
-`reverse(string)` reverses and returns the given string.
+importing the file
 ```typescript
-import { reverse } from './index'
+import './index'
 
-// gnirts emos
-return reverse('some string')
+const word = 'word'
+const sentence = 'some sentence'
 ```
 
-`capitalCase(string)` capitalizes each individual word in a given string and returns the new string.
+`.reverse()` reverses and returns the given string.
 ```typescript
-import { capitalCase } from './index'
+// drow
+return word.reverse()
 
-// Some Or Other String
-return capitalCase('some or other string')
+// ecnetnes emos
+return sentence.reverse()
 ```
 
-`camelCase(string)` converts the given string to camelCaseFormat and returns it.
+`.toCapitalCase()` capitalizes each individual word in a given string and returns the new string.
 ```typescript
-import { camelCase } from './index'
-
-// thisIsNowCamelCase
-return camelCase('This is now camel case')
+// Some Sentence
+return sentence.toCapitalCase()
 ```
 
-`toBinary(string, ?deliminate)` converts the given string or sentence into binary code. This by default is returned as 
+`.toCamelCase()` converts the given string to camelCaseFormat and returns it.
+```typescript
+// someSentence
+return sentence.toCamelCase()
+```
+
+`.toBinary(?deliminate)` converts the given string or sentence into binary code. This by default is returned as 
 a single string however the response can be set to be deliminated.
 ```typescript
-import { toBinary } from './index'
 import { Delimination } from './enums/Delimination'
+
+const word = 'some binary'
 
 // No delimination
 // 1110011110111111011011100101100000110001011010011101110110000111100101111001
-return toBinary('some binary')
+return word.toBinary()
 
 // Space deliminated
 // 1110011 1101111 1101101 1100101 100000 1100010 1101001 1101110 1100001 1110010 1111001
-return toBinary('some binary', Delimination.SPACES)
+return word.toBinary(Delimination.SPACES)
 
 // Retain original delimination
 // 1110011110111111011011100101 110001011010011101110110000111100101111001
-return toBinary('some binary', Delimination.ORIGINAL)
+return word.toBinary(Delimination.ORIGINAL)
 ```
 
-`toHexadecimal(string, ?deliminate)` converts the given string or sentence into hexadecimal. This be default is returned
+`.toHexadecimal(?deliminate)` converts the given string or sentence into hexadecimal. This be default is returned
 as a single string however the response can be set to be deliminated.
 ```typescript
-import { toHexadecimal } from './index'
 import { Delimination } from './enums/Delimination'
 
+const word = 'some hexadecimal'
+
 // No delimination
-// 68657861646563696d616c
-return toHexadecimal('hexadecimal')
+// 736f6d6568657861646563696d616c
+return word.toHexadecimal()
 
 // Space deliminated
 // 73 6f 6d 65 20 68 65 78 61 64 65 63 69 6d 61 6c
-return toHexadecimal('some hexadecimal', Delimination.SPACES)
+return word.toHexadecimal(Delimination.SPACES)
 
 // Retain original delimination
 // 736f6d65 68657861646563696d616c
-return toHexadecimal('some hexadecimal', Delimination.ORIGINAL)
+return word.toHexadecimal(Delimination.ORIGINAL)
 ```
 
 ## Tests
