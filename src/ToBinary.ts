@@ -1,12 +1,7 @@
 import { Delimination } from './enums/Delimination'
 
-/**
- * Converts the string into binary code. By default the response is concatenated together but can be set to be space deliminated
- * @param {string} str The given string to convert to binary
- * @param {Delimination} deliminate The manner of delimination that should be implemented
- */
-export function toBinary(str: string, deliminate: Delimination = Delimination.NONE): string {
-  const conversion = (item: string) => item.charCodeAt(0)
+String.prototype.toBinary = function (this: string, deliminate: Delimination = Delimination.NONE): string {
+  const conversion = (item: string): string => item.charCodeAt(0)
     .toString(2)
 
   // Retain original spacing delimination
@@ -15,12 +10,12 @@ export function toBinary(str: string, deliminate: Delimination = Delimination.NO
       .map(conversion)
       .join('')
 
-    return str.split(' ')
+    return this.split(' ')
       .map(originalSpacing)
       .join(' ')
   }
 
-  const binary = str.split('')
+  const binary = this.split('')
     .map(conversion)
 
   // Deliminate each character by spaces

@@ -1,15 +1,16 @@
-import { reverse } from '../../src'
+import '../../src'
 
 describe('Reverse', () => {
-  describe('#reverse', () => {
-    it('returns a reversed string when a singular word is given', () => {
-      return reverse('word')
-        .should.deep.equal('drow')
-    })
+  const word = 'word'
+  const sentence = 'multiple words in a string'
 
-    it('returns a reversed string when multiple words are given', () => {
-      return reverse('multiple words in a string')
-        .should.deep.equal('gnirts a ni sdrow elpitlum')
-    })
+  it('returns a reversed string when a singular word is given', () => {
+    return word.reverse()
+      .should.deep.equal('drow')
+  })
+
+  it('returns a reversed string when multiple words are given', () => {
+    return sentence.reverse()
+      .should.deep.equal('gnirts a ni sdrow elpitlum')
   })
 })
