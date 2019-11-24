@@ -10,6 +10,7 @@ import './ToKebabCase'
 import './ReverseWords'
 import './ToHexadecimal'
 import './ToCapitalCase'
+import './IsPalindromic'
 
 import { Delimination } from './enums/Delimination'
 

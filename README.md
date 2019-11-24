@@ -25,6 +25,19 @@ const word = 'word'
 const sentence = 'some sentence'
 ```
 
+`.isPalindromic()` determines whether or not the given string or sentence is a palindrome.
+```typescript
+const word = 'racecar'
+
+// true
+return word.isPalindromic()
+
+const word = 'race car'
+
+// false
+return word.isPalindromic()
+```
+
 `.reverse()` reverses and returns the given string.
 ```typescript
 // drow

@@ -65,4 +65,9 @@ interface String {
    * @param {Delimination} deliminate The manner of delimination that should be implemented
    */
   toHexadecimal(deliminate?: Delimination): string
+
+  /**
+   * Determines whether or not the string is a palindrome
+   */
+  isPalindromic(): boolean
 }
